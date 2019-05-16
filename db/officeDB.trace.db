@@ -1,0 +1,123 @@
+2019-05-16 00:13:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS EMPLOEES(ID BIGINT AUTO_INCREMENT PRIMARY KEY, NAME VARCHAR(255) NOT NULL,SURNAME VARCHAR(255) NORT[*] NULL,RATING INTEGER NOT NULL) "; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS emploees(id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL,surname VARCHAR(255) NORT NULL,rating INTEGER NOT NULL) [42001-197]
+2019-05-16 00:48:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'employees'[*] ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'employees' ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 00:49:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 00:51:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] ('name', 'surname', 'rating') VALUES ('Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' ('name', 'surname', 'rating') VALUES ('Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 00:52:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] (, 'name', 'surname', 'rating') VALUES (, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' (, 'name', 'surname', 'rating') VALUES (, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 00:53:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] (1, 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' (1, 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 00:53:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] (1, 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' (1, 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 00:54:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] (1, 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' (1, 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 00:54:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 00:55:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 01:03:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] ('id', 'name', 'surname', 'rating') VALUES (ID, NAME, SURNAME, RATING);  "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' ('id', 'name', 'surname', 'rating') VALUES (id, name, surname, rating);  [42001-197]
+2019-05-16 01:04:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] ('id', 'name', 'surname', 'rating') VALUES (ID, NAME, SURNAME, RATING); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' ('id', 'name', 'surname', 'rating') VALUES (ID, NAME, SURNAME, RATING);  [42001-197]
+2019-05-16 01:04:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] ('id', 'name', 'surname', 'rating') VALUES (ID, NAME, SURNAME, RATING);"; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' ('id', 'name', 'surname', 'rating') VALUES (ID, NAME, SURNAME, RATING); [42001-197]
+2019-05-16 01:05:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 01:05:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10); "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' ('id', 'name', 'surname', 'rating') VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 01:09:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO 'emploees'[*] (ID,NAME, SURNAME, RATING) VALUES (1, 'Viktor', 'Surzhko', 10);  "; expected "identifier"; SQL statement:
+INSERT INTO 'emploees' (id,name, surname, rating) VALUES (1, 'Viktor', 'Surzhko', 10);  [42001-197]
+2019-05-16 01:40:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT INTO EMLPLOEES VALUES[*] (1, 'Viktor', 'Surzhko', 1) "; SQL statement:
+SELECT INTO emlploees VALUES (1, 'Viktor', 'Surzhko', 1) [42000-197]
+2019-05-16 01:41:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT INTO EMLPLOEES VALUES[*] (1, 'Viktor', 'Surzhko', 10) "; SQL statement:
+SELECT INTO emlploees VALUES (1, 'Viktor', 'Surzhko', 10) [42000-197]
+2019-05-16 01:41:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT INTO EMLPLOEES VALUES[*] (1, , , ) "; SQL statement:
+SELECT INTO emlploees VALUES (1, , , ) [42000-197]
+2019-05-16 01:42:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * INTO[*] EMPLOEES WHERE  ID = 1 "; SQL statement:
+SELECT * INTO emploees WHERE  id = 1 [42000-197]
+2019-05-16 01:42:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * INTO[*] EMPLOEES WHERE  ID = 1;  "; SQL statement:
+SELECT * INTO emploees WHERE  id = 1;  [42000-197]
+2019-05-16 03:29:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "EMPLOYEE.NAME" not found; SQL statement:
+INSERT INTO emploees(id, name, surname, rating) VALUES(5 ,employee.name,employee.surname, employee.rating);  [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.company.Repository.EmployeesTable.executeSqlStatement(BaseTable.java:35)
+	at com.company.Repository.EmployeesTable.executeSqlStatement(BaseTable.java:43)
+	at com.company.Repository.Employees.addEmployee(Employees.java:38)
+	at com.company.OfficeDB.addEmployee(OfficeDB.java:47)
+	at com.company.OfficeDB.chech(OfficeDB.java:63)
+	at com.company.OfficeDB.main(OfficeDB.java:79)
+2019-05-16 03:37:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "NAME" not found; SQL statement:
+INSERT INTO emploees(id, name, surname, rating) VALUES(5 ,name, surname, rating);  [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.company.Repository.EmployeesTable.executeSqlStatement(BaseTable.java:35)
+	at com.company.Repository.EmployeesTable.executeSqlStatement(BaseTable.java:43)
+	at com.company.Repository.Employees.addEmployee(Employees.java:38)
+	at com.company.OfficeDB.addEmployee(OfficeDB.java:47)
+	at com.company.OfficeDB.chech(OfficeDB.java:63)
+	at com.company.OfficeDB.main(OfficeDB.java:79)
+2019-05-16 03:37:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "NAME1" not found; SQL statement:
+INSERT INTO emploees(id, name, surname, rating) VALUES(5 ,name1, surname, rating);  [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.company.Repository.EmployeesTable.executeSqlStatement(BaseTable.java:35)
+	at com.company.Repository.EmployeesTable.executeSqlStatement(BaseTable.java:43)
+	at com.company.Repository.Employees.addEmployee(Employees.java:38)
+	at com.company.OfficeDB.addEmployee(OfficeDB.java:47)
+	at com.company.OfficeDB.chech(OfficeDB.java:63)
+	at com.company.OfficeDB.main(OfficeDB.java:79)
