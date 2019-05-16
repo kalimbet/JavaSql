@@ -327,3 +327,21 @@ ALTER TABLE employee_rating ADD FOREIGN KEY (empid) REFERENCES employees(id) [42
 	at com.company.Repository.EmplayeeRating.createForeingKeys(EmplayeeRating.java:25)
 	at com.company.OfficeDB.createTablesAndForeignKeys(OfficeDB.java:43)
 	at com.company.OfficeDB.main(OfficeDB.java:80)
+2019-05-16 13:50:31 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Column "EMPID" not found; SQL statement:
+ALTER TABLE employee_rating ADD FOREIGN KEY (empid) REFERENCES employees(id) [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:212)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:233)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.company.Repository.EmplayeeTable.executeSqlStatement(EmplayeeTable.java:34)
+	at com.company.Repository.EmplayeeRating.createForeingKeys(EmplayeeRating.java:25)
+	at com.company.OfficeDB.createTablesAndForeignKeys(OfficeDB.java:43)
+	at com.company.OfficeDB.main(OfficeDB.java:80)

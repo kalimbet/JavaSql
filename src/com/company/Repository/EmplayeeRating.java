@@ -15,7 +15,7 @@ public class EmplayeeRating extends EmplayeeTable implements TableOperations{
                 "id BIGINT AUTO_INCREMENT PRIMARY KEY, " +
                 "operData datetime NOT NULL, " +
                 "room INTEGER NOT NULL, " +
-                "empid INTEGER NOT NULL, " +
+                "empid BIGINT NOT NULL, " +
                 "rating INTEGER NOT NULL)", "Table created " + tableName);
 
     }
