@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.Model.Employee;
 import com.company.Repository.Emplayee;
-import com.company.Repository.EmplayeeRating;
+import com.company.Repository.EmplayeeRatingTable;
 
 import java.sql.*;
 import java.util.Scanner;
@@ -17,7 +17,7 @@ public class OfficeDB {
     Employee employee;
     //DBMS Tables
     Emplayee employees;
-    EmplayeeRating employeesRating;
+    EmplayeeRatingTable employeesRating;
 
     //Get a new database connection
     public static Connection getConection() throws SQLException{
@@ -29,7 +29,7 @@ public class OfficeDB {
         Class.forName(DB_DRIVER);
         //Initialization tables
         employees = new Emplayee();
-        employeesRating = new EmplayeeRating();
+        employeesRating = new EmplayeeRatingTable();
         employee = new Employee();
         input = new Scanner(System.in);
 

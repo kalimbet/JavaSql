@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Emplayee extends EmplayeeTable implements TableOperations {
+public class Emplayee extends BaseTable implements TableOperations {
 
     public Emplayee() throws SQLException{
         super("employees");

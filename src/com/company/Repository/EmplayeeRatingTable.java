@@ -2,10 +2,10 @@ package com.company.Repository;
 
 import java.sql.SQLException;
 
-public class EmplayeeRating extends EmplayeeTable implements TableOperations{
+public class EmplayeeRatingTable extends BaseTable implements TableOperations{
 
 
-    public EmplayeeRating() throws SQLException {
+    public EmplayeeRatingTable() throws SQLException {
         super("employee_rating");
     }
 
@@ -22,7 +22,7 @@ public class EmplayeeRating extends EmplayeeTable implements TableOperations{
 
     @Override
     public void createForeingKeys() throws SQLException {
-        super.executeSqlStatement("ALTER TABLE employee_rating ADD FOREIGN KEY (empid) REFERENCES employees(id)","test");
+        super.executeSqlStatement("ALTER TABLE employee_rating ADD FOREIGN KEY (empid) REFERENCES employees(id)","Created foreign key emplayee_rating.empid -> emplayee.id");
     }
 
     @Override

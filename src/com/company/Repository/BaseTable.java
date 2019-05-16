@@ -6,13 +6,13 @@ import java.io.Closeable;
 import java.sql.*;
 import java.util.Scanner;
 // Service parent class
-public class EmplayeeTable implements Closeable {
+public class BaseTable implements Closeable {
 
     Connection connection;  // JDBC connection for working with the table
     String tableName;
     Scanner input = new Scanner(System.in);
 
-    EmplayeeTable(String tableName) throws SQLException {  //For a real table, pass in the constructor its name.
+    BaseTable(String tableName) throws SQLException {  //For a real table, pass in the constructor its name.
         this.tableName = tableName;
         this.connection = OfficeDB.getConection();  // Establish a connection with the DBMS for further work
     }
