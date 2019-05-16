@@ -6,8 +6,7 @@ public interface TableOperations {
     void createTable() throws SQLException;
     void createForeingKeys() throws SQLException;
     void createExtraConstrains() throws SQLException;
-//    void addEmployee() throws SQLException;
-    void addEmployee() throws SQLException;
-    void showEmployees() throws SQLException;
+    void addToDataBase() throws SQLException;
+    void showFromDataBase() throws SQLException;
     void updateTable() throws SQLException;
 }

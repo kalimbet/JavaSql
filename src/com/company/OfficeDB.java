@@ -1,7 +1,8 @@
 package com.company;
 
 import com.company.Model.Employee;
-import com.company.Repository.Employees;
+import com.company.Repository.Emplayee;
+import com.company.Repository.EmplayeeRating;
 
 import java.sql.*;
 import java.util.Scanner;
@@ -15,8 +16,8 @@ public class OfficeDB {
 
     Employee employee;
     //DBMS Tables
-    Employees employees;
-
+    Emplayee employees;
+    EmplayeeRating employeesRating;
 
     //Get a new database connection
     public static Connection getConection() throws SQLException{
@@ -27,7 +28,8 @@ public class OfficeDB {
     public OfficeDB() throws SQLException,ClassNotFoundException{
         Class.forName(DB_DRIVER);
         //Initialization tables
-        employees = new Employees();
+        employees = new Emplayee();
+        employeesRating = new EmplayeeRating();
         employee = new Employee();
         input = new Scanner(System.in);
 
@@ -36,26 +38,27 @@ public class OfficeDB {
     //Creating all the tables and keys in between
     public void createTablesAndForeignKeys() throws SQLException{
         employees.createTable();
-
+        employeesRating.createTable();
         // Create foreign keys (connection between tables)
+        employeesRating.createForeingKeys();
     }
 
     public void addEmployee() throws SQLException {
-        employees.addEmployee();
+        employees.addToDataBase();
         chech();
     }
 
 
 
     public void showEmployees() throws SQLException{
-        employees.showEmployees();
+        employees.showFromDataBase();
     }
 
     public void chech() throws SQLException {
         String condition;
         System.out.println("Menu: ");
         System.out.println("    1. Add Employee");
-        System.out.println("    2. Show Employees");
+        System.out.println("    2. Show Emplayee");
         System.out.println("    3. Update Employee");
         condition = input.nextLine();
         switch (condition){
